@@ -369,6 +369,7 @@ footer {
     border-radius: none;
     padding: 2.5rem;
     border-bottom: 1px solid #FFE4E6;
+    background-color: rgba(255, 251, 235, 0.5);
   }
 }
 .home > * {
@@ -558,8 +559,9 @@ footer {
   font-weight: 600;
 }
 .services__body {
-  margin-top: 2.5rem;
+  margin-top: 4rem;
   padding: 0 2rem;
+  background-color: transparent;
 }
 .services__item {
   display: flex;
@@ -715,24 +717,32 @@ footer {
 .work__description {
   font-size: 1.7rem;
 }
-.work__link {
+.work__footer {
   position: absolute;
-  bottom: 5rem;
   right: 5rem;
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: rgb(254, 243, 199);
-  color: inherit;
-  font-weight: 600;
-  font-size: 1.6rem;
-  text-decoration: none;
-  transition: all 0.4s ease-in-out;
+  bottom: 5rem;
+  width: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-end;
 }
 @media (max-width: 64.375em) {
-  .work__link {
+  .work__footer {
     right: 2.5rem;
     bottom: 2.5rem;
   }
+}
+.work__link {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  background-color: #FEF9C3;
+  color: inherit;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
 }
 .work__link:hover {
   transform: translateY(-4px);
