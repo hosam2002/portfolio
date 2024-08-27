@@ -1,6 +1,6 @@
 const navbutton = document.getElementById(`nav-btn`)
-const navmenu = document.getElementById(`nav-menu`)
-const navclose = document.getElementById(`nav-close`)
+const navmenu   = document.getElementById(`nav-menu`)
+const navclose  = document.getElementById(`nav-close`)
 
 navbutton.addEventListener(`change`, () => {
 
@@ -8,9 +8,9 @@ navbutton.addEventListener(`change`, () => {
 
     if (status == true) {
 
-        navmenu.style.marginLeft = `0`
 
-        setTimeout(() => { navclose.style.display = `block` }, 400)      
+        navmenu.style.marginLeft = `0`
+        navclose.style.display = `block`
 
     } else {
 
