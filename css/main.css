@@ -638,7 +638,8 @@ footer {
 @media (max-width: 54.0625em) {
   .work__project {
     width: 40rem;
-    min-height: 80rem;
+    height: max-content;
+    padding-bottom: 5rem;
     flex-direction: column;
   }
 }
@@ -697,6 +698,7 @@ footer {
 .work__details {
   width: calc(100% - 35rem);
   padding: 5rem;
+  background-color: transparent;
 }
 @media (max-width: 64.375em) {
   .work__details {
@@ -705,7 +707,7 @@ footer {
 }
 @media (max-width: 54.0625em) {
   .work__details {
-    width: 35rem;
+    width: 100%;
   }
 }
 .work__title {
